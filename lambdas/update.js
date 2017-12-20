@@ -11,8 +11,9 @@ const Client = new Pool({
   port,
   idleTimeoutMillis : 1000
 });
-
-let updateMovie = "UPDATE " + table + " SET id = 4, title = 'MarksALoser', year = 360, genre = 'RomCom' WHERE id = 3;";
+const data = require('../test-data/data.json');
+console.log(data);
+let updateMovie = `UPDATE ${table} SET title = '${data.title}', year = ${data.year}, genre = '${data.genre}' WHERE id = '${data.id}';`;
 
 module.exports.update = (event, context, callback) => {
   Client.connect()

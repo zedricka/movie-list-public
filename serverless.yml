@@ -41,8 +41,8 @@ functions:
     handler: lambdas/update.update
     events:
       - http:
-          path: update
-          method: update
+          path: put
+          method: put
 
   delete:
     handler: lambdas/delete.delete

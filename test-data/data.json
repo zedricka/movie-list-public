@@ -1,6 +1,13 @@
 {
-  "id": "default",
+  "id": 4,
   "title" : "JomariSux",
   "year" : 420,
   "genre" : "Horror"
+}
+
+{
+  "id": "default",
+  "title" : "MarkIsALoser",
+  "year" : 360,
+  "genre" : "RomCom"
 }
